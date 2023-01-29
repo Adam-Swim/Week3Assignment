@@ -63,7 +63,7 @@ public class Week3Assignment {
 		
 		//4. How do you access the first element of any array?
 		
-		System.out.println(names[1]);
+		System.out.println(names[0]);
 		
 		
 		
@@ -86,26 +86,26 @@ public class Week3Assignment {
 		System.out.println(sum2);
 		
 		
-		System.out.println(repeatWord("Adam", 7));
+		System.out.println(repeatWord("Adam", 7)); //7.
 
-		System.out.println(concatfullName("Adam", "Salt"));
+		System.out.println(concatfullName("Adam", "Salt")); //8.
 		
 		int[] numbers = {1, 5, 8, 13, 35, 21};
-		System.out.println(isGreaterThan100(numbers));
+		System.out.println(isGreaterThan100(numbers));  //9.
 		
 		
 		double[] doubles = {12.3, 31.8, 29.9, 67.6, 54.1, 99.0};
-		System.out.println(arrayAverage(doubles));
+		System.out.println(arrayAverage(doubles));     //10.
 		
 		
 		
 		double[] Team1 = {88.6, 67.8, 98.1, 84.5, 87.8};
 		double[] Team2 = { 72.1, 66.7, 89.4, 77.2, 69.4};
-		System.out.println(whichArrayIsAverageIsGreater(Team1, Team2));
+		System.out.println(whichArrayIsAverageIsGreater(Team1, Team2));//11.
 		
 		
-		System.out.println(willBuyDrink(true, 10.50));
-		System.out.println(needsOilChanged(4150, 4));
+		System.out.println(willBuyDrink(true, 10.50)); //12.
+		System.out.println(needsOilChanged(4150, 4)); //13.
 		
 	} // end of main
 	
@@ -186,9 +186,9 @@ public class Week3Assignment {
 	}
 		//13. Create a method of your own that solves a problem. In comments, write what the method does and why you created it.
 
-	public static boolean needsOilChanged(double miles, int months) {
-		if (miles > 3000 || months > 4) {
-			return true;
+	public static boolean needsOilChanged(double miles, int months) { // create a method that takes two values , miles and months 
+		if (miles >= 3000 || months >= 4) {                             // and checks to see if miles are greater than 3000 OR months
+			return true;                                              // are greater than 3, returns a boolean value of true. If not returns false.
 		} else {
 			return false;
 		}
